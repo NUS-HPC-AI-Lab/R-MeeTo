@@ -508,8 +508,8 @@ class R_MeeTo_Mamba_shuffle(VisionMamba):
             for i, block in enumerate(self.layers):
                 if i == 0:
                     mamba_flops = N * C * (4 * C) + N * C * (2 * C)
-                    mamba_flops += self.MambaInnerFnNoOutProj_flop_jit(b=1, l=patch_number, layer=block)
-                    mamba_flops += self.selective_scan_flop_jit(B=1, L=patch_number, D=2 * C, dstate=self.dstate)
+                    mamba_flops += self.MambaInnerFnNoOutProj_flop_jit(b=1, l=N, layer=block)
+                    mamba_flops += self.selective_scan_flop_jit(B=1, L=N, D=2 * C, dstate=self.dstate)
                     flops += mamba_flops
                     layer_flops += mamba_flops
                 else:
