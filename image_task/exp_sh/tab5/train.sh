@@ -1,0 +1,22 @@
+export CUDA_VISIBLE_DEVICES=0,1,2,3
+
+DATA_PATH="./datasets/imagenet/"
+MODEL_PTH="./pretrained"
+
+# retrain
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_tiny_shuffle --merge_method ToMe --num_prune 5 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.1
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_tiny_shuffle --merge_method ToMe --num_prune 5 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.3
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_tiny_shuffle --merge_method ToMe --num_prune 5 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.5
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_tiny_shuffle --merge_method ToMe --num_prune 5 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.7
+
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_small_shuffle --merge_method ToMe --num_prune 11 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.1
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_small_shuffle --merge_method ToMe --num_prune 11 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.3
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_small_shuffle --merge_method ToMe --num_prune 11 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.5
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_small_shuffle --merge_method ToMe --num_prune 11 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.7
+
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_small_shuffle --merge_method ToMe --num_prune 11 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.1 --if_pruning
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_small_shuffle --merge_method ToMe --num_prune 11 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.3 --if_pruning
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_small_shuffle --merge_method ToMe --num_prune 11 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.5 --if_pruning
+python -m torch.distributed.launch --nproc_per_node=4 --use_env --master_port 26866 main.py --lr 2e-5 --min-lr 1e-6 --data-path $DATA_PATH --output_dir ./log --model RMeeTo_small_shuffle --merge_method ToMe --num_prune 11 --metric X --if_order --model_pth $MODEL_PTH --batch-size 128 --distance cosine --epoch 3 --distill True --if_shuffle --shuffle_rate 0.7 --if_pruning
+
+
