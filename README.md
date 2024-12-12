@@ -2,7 +2,7 @@
 
 The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Merged Token Re-training".
 
-> Mingjia Shi<sup>1</sup>, Yuhao Zhou<sup>2</sup>, Ruiji Yu<sup>3</sup>, Zekai Li<sup>1</sup>, Zhiyuan Liang<sup>1</sup>, Xuanlei Zhao<sup>1</sup>, Xiaojiang Peng<sup></sup>, Tanmay Rajpurohit<sup></sup>, Ramakrishna Vedantam<sup></sup>, Wangbo Zhao<sup></sup>, Kai Wang<sup></sup>, Yang You<sup></sup>
+> Mingjia Shi<sup></sup>, Yuhao Zhou<sup></sup>, Ruiji Yu<sup></sup>, Zekai Li<sup></sup>, Zhiyuan Liang<sup></sup>, Xuanlei Zhao<sup></sup>, Xiaojiang Peng<sup></sup>, Tanmay Rajpurohit<sup></sup>, Ramakrishna Vedantam<sup></sup>, Wangbo Zhao<sup></sup>, Kai Wang<sup></sup>, Yang You<sup></sup>
 >
 <!-- > <sup>1</sup>[National University of Singapore](https://www.nus.edu.sg/), <sup>2</sup>[DAMO Academy, Alibaba Group](https://damo.alibaba.com/?language=zh), <sup>3</sup>Hupan Lab, <sup>4</sup>[Tsinghua University](https://www.tsinghua.edu.cn/) -->
 >
