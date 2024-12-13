@@ -2,9 +2,8 @@
 
 The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Merged Token Re-training".
 
-> Mingjia Shi<sup></sup>, Yuhao Zhou<sup></sup>, Ruiji Yu<sup></sup>, Zekai Li<sup></sup>, Zhiyuan Liang<sup></sup>, Xuanlei Zhao<sup></sup>, Xiaojiang Peng<sup></sup>, Tanmay Rajpurohit<sup></sup>, Ramakrishna Vedantam<sup></sup>, Wangbo Zhao<sup></sup>, Kai Wang<sup></sup>, Yang You<sup></sup>
+> Mingjia Shi<sup>&ast;</sup>, Yuhao Zhou<sup>&ast;</sup>, Ruiji Yu<sup></sup>, Zekai Li<sup></sup>, Zhiyuan Liang<sup></sup>, Xuanlei Zhao<sup></sup>, Xiaojiang Peng<sup></sup>, Tanmay Rajpurohit<sup></sup>, Ramakrishna Vedantam<sup></sup>, Wangbo Zhao<sup>†</sup>, Kai Wang<sup>†</sup>, Yang You<sup></sup>
 >
-<!-- > <sup>1</sup>[National University of Singapore](https://www.nus.edu.sg/), <sup>2</sup>[DAMO Academy, Alibaba Group](https://damo.alibaba.com/?language=zh), <sup>3</sup>Hupan Lab, <sup>4</sup>[Tsinghua University](https://www.tsinghua.edu.cn/) -->
 >
 >  [Paper]()
 
@@ -37,7 +36,7 @@ Vision Mamba (e.g., Vim) has successfully been integrated into computer vision, 
 #### 1. Clone the repository
 
 ```
-git clone https://github.com/Aristo23333/RMeeTo.git
+git clone https://github.com/NUS-HPC-AI-Lab/R-MeeTo
 ```
 
 #### 2. Create a new Conda environment
@@ -77,7 +76,7 @@ See [PRETRAINED](PRETRAINED.md) for downloading the pretrained model of our base
 ### 🛠️ Reproduce our results
 #### For image task:
 ```
-bash ./image_task/exp_sh/tab2/vim_tiny
+bash ./image_task/exp_sh/tab2/vim_tiny.sh
 ```
 #### For video task:
 ```
@@ -86,6 +85,17 @@ bash ./video_task/exp_sh/tab13/videomamba_tiny.sh
 #### Checkpoints:
 
 See [CKPT](CKPT.md) to find our reproduced checkpoints and logs of the main results. 
+
+### ⚡️ Faster Vision Mamba is Rebuilt in Minutes
+
+| Hardware                      | Vim-Ti | Vim-S | Vim-B |
+|-------------------------------|--------|-------|-------|
+| 1 x 8 x H100 (single machine) | 16.2   | 25.2  | 57.6  |
+| 2 x 8 x H100 (Infiniband)     | 8.1    | 12.9  | 30.6  |
+| 4 x 8 x H100 (Infiniband)     | 4.2    | 6.8   | 16.9  |
+
+Wall time in minutes of re-training Vim-Ti, Vim-S and Vim-B for 3 epochs on 3 hardwares by R-MeeTo.
+**Give us minutes, we back a faster Mamba.**
 
 ### ⏱️ Measure inference speed 
 <p align="center">
@@ -112,7 +122,3 @@ If you found our work useful, please consider citing us.
 
 ## Acknowledge
 The repo is partly built based on [ToMe](https://github.com/facebookresearch/ToMe), [Vision Mamba](https://github.com/hustvl/Vim), and [VideoMamba](https://github.com/OpenGVLab/VideoMamba). We are grateful for their generous contributions to open source.
-
-
-## Contact
-🔥🔥🔥 If you are interested in this work and hope to cooperate with us, please drop an email to yj1938@sjtu.edu.cn 🔥🔥🔥
