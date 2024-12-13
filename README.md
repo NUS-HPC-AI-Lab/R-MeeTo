@@ -27,6 +27,18 @@ Vision Mamba (e.g., Vim) has successfully been integrated into computer vision, 
 - `2024.12.12`: The code is released.
 
 
+## ⚡️ Faster Vision Mamba is Rebuilt in Minutes
+
+| Hardware                      | Vim-Ti | Vim-S | Vim-B |
+|-------------------------------|--------|-------|-------|
+| 1 x 8 x H100 (single machine) | 16.2   | 25.2  | 57.6  |
+| 2 x 8 x H100 (Infiniband)     | 8.1    | 12.9  | 30.6  |
+| 4 x 8 x H100 (Infiniband)     | 4.2    | 6.8   | 16.9  |
+
+Wall time in minutes of re-training Vim-Ti, Vim-S and Vim-B for 3 epochs on 3 hardwares by R-MeeTo.
+**Give us minutes, we back a faster Mamba.**
+
+
 ## 🛠 Dataset Prepare
 - For image datasets we use ImageNet-1K.
 - For video datasets K400, you can download them from [OpenDataLab](https://opendatalab.org.cn/OpenMMLab/Kinetics-400) or their official websites. We follow the data list from [here](https://drive.google.com/drive/folders/17VB-XdF3Kfr9ORmnGyXCxTMs86n0L4QL?usp=sharing) to split the dataset.
@@ -84,18 +96,7 @@ bash ./video_task/exp_sh/tab13/videomamba_tiny.sh
 ```
 #### Checkpoints:
 
-See [CKPT](CKPT.md) to find our reproduced checkpoints and logs of the main results. 
-
-### ⚡️ Faster Vision Mamba is Rebuilt in Minutes
-
-| Hardware                      | Vim-Ti | Vim-S | Vim-B |
-|-------------------------------|--------|-------|-------|
-| 1 x 8 x H100 (single machine) | 16.2   | 25.2  | 57.6  |
-| 2 x 8 x H100 (Infiniband)     | 8.1    | 12.9  | 30.6  |
-| 4 x 8 x H100 (Infiniband)     | 4.2    | 6.8   | 16.9  |
-
-Wall time in minutes of re-training Vim-Ti, Vim-S and Vim-B for 3 epochs on 3 hardwares by R-MeeTo.
-**Give us minutes, we back a faster Mamba.**
+See [CKPT](CKPT.md) to find our reproduced checkpoints and logs of the main results.
 
 ### ⏱️ Measure inference speed 
 <p align="center">
