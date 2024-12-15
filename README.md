@@ -4,9 +4,29 @@ The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Me
 
 > Mingjia Shi<sup>&ast;</sup>, Yuhao Zhou<sup>&ast;</sup>, Ruiji Yu<sup></sup>, Zekai Li<sup></sup>, Zhiyuan Liang<sup></sup>, Xuanlei Zhao<sup></sup>, Xiaojiang Peng<sup></sup>, Tanmay Rajpurohit<sup></sup>, Ramakrishna Vedantam<sup></sup>, Wangbo Zhao<sup>†</sup>, Kai Wang<sup>†</sup>, Yang You<sup></sup>
 >
->
->  [Paper]()
+> (*: equal contribution, †: corresponding authors)
+> 
+> [Paper]()
+> [Project Page](https://bdemo.github.io/R-MeeTo/)
 
+## TL;DR
+
+Intuitions of our R-MeeTo: 
+* Why is Mamba sensitive to token reduction? 
+* Why does R-MeeTo (i.e., Merging + Re-training) work?
+
+<p align="center">
+<video src="https://bdemo.github.io/R-MeeTo/static/videos/video_pre_v5.mp4" width=100%
+class="center">
+
+The key knowledge loss mainly causes the heavier performance drop after applying token reduction. 
+R-MeeTo is thus proposed, fast fixing key knowledge and therefore recovering performance.
+
+R-MeeTo is simple and effective, with only two main modules: merging and re-training. Merging lowers the knowledge loss; re-training fast recovers the knowledge structure of Mamba. From the next video, we show that merging does help.
+
+<p align="center">
+<video src="https://bdemo.github.io/R-MeeTo/static/videos/video_pre_method.mp4" width=100%
+class="center">
 
 ## Overview
 <p align="center">
@@ -23,7 +43,7 @@ SSM, are measured by MINE on the middle layers of DeiT-S and Vim-S (7-th/12 laye
 Vision Mamba (e.g., Vim) has successfully been integrated into computer vision, and token reduction has yielded promising outcomes in Vision Transformers (ViTs). However, token reduction performs less effectively on Vision Mamba compared to ViTs. Pruning informative tokens in Mamba leads to a high loss of key knowledge tokens and a drop in performance, making it not a good solution for enhancing efficiency. Token merging, which preserves more token information than pruning, has demonstrated commendable performance in ViTs, but vanilla merging performance decreases as the reduction ratio increases either, failing to maintain the key knowledge and performance in Mamba. Re-training the model with token merging, which effectively rebuilds the key knowledge, enhances the performance of Mamba. Empirically, pruned Vims, recovered on ImageNet-1K, only drop up to 0.9\% accuracy, by our proposed framework **R-MeeTo** in our main evaluation. We show how simple and effective the fast recovery can be achieved at minute-level, in particular, a 35.9\% accuracy spike over 3 epochs of training on Vim-Ti. Moreover, Vim-Ti/S/B are re-trained within 5/7/17 minutes, and Vim-S only drop 1.3\% with 1.2 $\times$ (up to 1.5 $\times$) speed up in inference.
 
 
-## News 🚀
+## 🚀 News
 - `2024.12.12`: The code is released.
 
 
