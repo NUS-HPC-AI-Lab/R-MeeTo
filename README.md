@@ -47,11 +47,11 @@ Vision Mamba (e.g., Vim) has successfully been integrated into computer vision, 
 
 ## ⚡️ Faster Vision Mamba is Rebuilt in Minutes
 
-| Hardware                      | Vim-Ti | Vim-S | Vim-B |
-|-------------------------------|--------|-------|-------|
-| 1 x 8 x H100 (single machine) | 16.2   | 25.2  | 57.6  |
-| 2 x 8 x H100 (Infiniband)     | 8.1    | 12.9  | 30.6  |
-| 4 x 8 x H100 (Infiniband)     | 4.2    | 6.8   | 16.9  |
+| Hardware                      | Vim-Ti    | Vim-S     | Vim-B     |
+|-------------------------------|-----------|-----------|-----------|
+| 1 x 8 x H100 (single machine) | 16.2 mins | 25.2 mins | 57.6 mins |
+| 2 x 8 x H100 (Infiniband)     | 8.1 mins  | 12.9 mins | 30.6 mins |
+| 4 x 8 x H100 (Infiniband)     | 4.2 mins  | 6.8 mins  | 16.9 mins |
 
 Wall time in minutes of re-training Vim-Ti, Vim-S and Vim-B for 3 epochs on 3 hardwares by R-MeeTo.
 **Give us minutes, we back a faster Mamba.**
