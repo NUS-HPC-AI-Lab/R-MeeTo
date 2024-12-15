@@ -11,16 +11,18 @@ The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Me
 
 ## TL;DR
 
-Intuitions of our R-MeeTo: 
 * Why is Mamba sensitive to token reduction? 
 * Why does R-MeeTo (i.e., Merging + Re-training) work?
+
+The anwser to all is the **key knowledge loss**.
 
 https://github.com/user-attachments/assets/b4338d45-b218-45a5-831a-dda62d956257
 
 The key knowledge loss mainly causes the heavier performance drop after applying token reduction. 
 R-MeeTo is thus proposed, fast fixing key knowledge and therefore recovering performance.
 
-R-MeeTo is simple and effective, with only two main modules: merging and re-training. Merging lowers the knowledge loss; re-training fast recovers the knowledge structure of Mamba.
+R-MeeTo is simple and effective, with only two main modules: merging and re-training. 
+Merging lowers the knowledge loss while re-training fast recovers the knowledge structure of Mamba.
 
 https://github.com/user-attachments/assets/5377b158-72d0-4d20-b6ff-fc41a62c9aec
 
