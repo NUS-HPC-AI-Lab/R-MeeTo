@@ -1,4 +1,4 @@
-# R-MeeTo: Rebuild Your Faster Vision Mamba in Minutes
+# R-MeeTo: Rebuild Your Faster Vision Mamba *in Minutes*
 
 The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Merged Token Re-training".
 
