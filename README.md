@@ -5,7 +5,7 @@ The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Me
 > Mingjia Shi<sup>&ast;</sup>, Yuhao Zhou<sup>&ast;</sup>, Ruiji Yu<sup></sup>, Zekai Li<sup></sup>, Zhiyuan Liang<sup></sup>, Xuanlei Zhao<sup></sup>, Xiaojiang Peng<sup></sup>, Tanmay Rajpurohit<sup></sup>, Ramakrishna Vedantam<sup></sup>, Wangbo Zhao<sup>†</sup>, Kai Wang<sup>†</sup>, Yang You<sup></sup>
 >
 > (*: equal contribution, †: corresponding authors)
-## Mingjia, Ruiji, Zekai, and Zhiyuan are looking for Ph.D. positions, many thanks for considering their applications.)
+## Mingjia, Ruiji, Zekai, and Zhiyuan are looking for Ph.D. positions, many thanks for considering their applications.
 > 
 > [Paper]()
 > [Project Page](https://bdemo.github.io/R-MeeTo/)
