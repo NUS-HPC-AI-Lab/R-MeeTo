@@ -59,8 +59,8 @@ Wall time in minutes of re-training Vim-Ti, Vim-S and Vim-B for 3 epochs on 3 ha
 
 
 ## 🛠 Dataset Prepare
-- For image datasets we use ImageNet-1K.
-- For video datasets K400, you can download them from [OpenDataLab](https://opendatalab.org.cn/OpenMMLab/Kinetics-400) or their official websites. We follow the data list from [here](https://drive.google.com/drive/folders/17VB-XdF3Kfr9ORmnGyXCxTMs86n0L4QL?usp=sharing) to split the dataset.
+- For the image dataset, we use ImageNet-1K.
+- For the video dataset, we use K400. You can download it from [OpenDataLab](https://opendatalab.org.cn/OpenMMLab/Kinetics-400) or its official website. We follow the data list from [here](https://drive.google.com/drive/folders/17VB-XdF3Kfr9ORmnGyXCxTMs86n0L4QL?usp=sharing) to split the dataset.
 
 ## 🛠 Installation
 
