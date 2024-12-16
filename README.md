@@ -8,7 +8,7 @@ The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Me
 > 
 > 🌟🌟 **Mingjia, Ruiji, Zekai, and Zhiyuan are looking for Ph.D. positions, many thanks for considering their applications.**
 > 
-> [Paper]()
+> [Paper](https://drive.google.com/file/d/1xJWhdqzama9k0v8Y9hV8InRDDTpzJAmN/view)
 > [Project Page](https://bdemo.github.io/R-MeeTo/)
 
 ## TL;DR
