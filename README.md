@@ -5,7 +5,8 @@ The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Me
 > Mingjia Shi<sup>&ast;</sup>, Yuhao Zhou<sup>&ast;</sup>, Ruiji Yu<sup></sup>, Zekai Li<sup></sup>, Zhiyuan Liang<sup></sup>, Xuanlei Zhao<sup></sup>, Xiaojiang Peng<sup></sup>, Tanmay Rajpurohit<sup></sup>, Ramakrishna Vedantam<sup></sup>, Wangbo Zhao<sup>†</sup>, Kai Wang<sup>†</sup>, Yang You<sup></sup>
 >
 > (*: equal contribution, †: corresponding authors)
-## Mingjia, Ruiji, Zekai, and Zhiyuan are looking for Ph.D. positions, many thanks for considering their applications.
+> 
+> 🌟🌟 **Mingjia, Ruiji, Zekai, and Zhiyuan are looking for Ph.D. positions, many thanks for considering their applications.**
 > 
 > [Paper]()
 > [Project Page](https://bdemo.github.io/R-MeeTo/)
@@ -17,7 +18,7 @@ The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Me
 
 The anwser to all is the **key knowledge loss**.
 
-https://github.com/user-attachments/assets/b4338d45-b218-45a5-831a-dda62d956257
+https://github.com/user-attachments/assets/4239a2df-85cb-4721-ba0c-a39832832bb8
 
 The key knowledge loss mainly causes the heavier performance drop after applying token reduction. 
 R-MeeTo is thus proposed, fast fixing key knowledge and therefore recovering performance.
@@ -25,7 +26,7 @@ R-MeeTo is thus proposed, fast fixing key knowledge and therefore recovering per
 R-MeeTo is simple and effective, with only two main modules: merging and re-training. 
 Merging lowers the knowledge loss while re-training fast recovers the knowledge structure of Mamba.
 
-https://github.com/user-attachments/assets/5377b158-72d0-4d20-b6ff-fc41a62c9aec
+https://github.com/user-attachments/assets/b276534e-394c-473b-8420-11ad168796cf
 
 ## Overview
 <p align="center">
