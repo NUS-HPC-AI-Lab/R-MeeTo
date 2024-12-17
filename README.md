@@ -6,7 +6,9 @@ The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Me
 >
 > (*: equal contribution, †: corresponding authors)
 > 
-> [Paper]()
+> 🌟🌟 **Mingjia, Ruiji, Zekai, and Zhiyuan are looking for Ph.D. positions, many thanks for considering their applications.**
+> 
+> [Paper](https://drive.google.com/file/d/1xJWhdqzama9k0v8Y9hV8InRDDTpzJAmN/view)
 > [Project Page](https://bdemo.github.io/R-MeeTo/)
 
 ## TL;DR
@@ -16,7 +18,7 @@ The official implementation of "Faster Vision Mamba is Rebuilt in Minutes via Me
 
 The anwser to all is the **key knowledge loss**.
 
-https://github.com/user-attachments/assets/b4338d45-b218-45a5-831a-dda62d956257
+https://github.com/user-attachments/assets/4239a2df-85cb-4721-ba0c-a39832832bb8
 
 The key knowledge loss mainly causes the heavier performance drop after applying token reduction. 
 R-MeeTo is thus proposed, fast fixing key knowledge and therefore recovering performance.
@@ -24,7 +26,7 @@ R-MeeTo is thus proposed, fast fixing key knowledge and therefore recovering per
 R-MeeTo is simple and effective, with only two main modules: merging and re-training. 
 Merging lowers the knowledge loss while re-training fast recovers the knowledge structure of Mamba.
 
-https://github.com/user-attachments/assets/5377b158-72d0-4d20-b6ff-fc41a62c9aec
+https://github.com/user-attachments/assets/b276534e-394c-473b-8420-11ad168796cf
 
 ## Overview
 <p align="center">
@@ -54,12 +56,12 @@ Vision Mamba (e.g., Vim) has successfully been integrated into computer vision, 
 | 4 x 8 x H100 (Infiniband)     | 4.2 mins  | 6.8 mins  | 16.9 mins |
 
 Wall time in minutes of re-training Vim-Ti, Vim-S and Vim-B for 3 epochs on 3 hardwares by R-MeeTo.
-**Give us minutes, we back a faster Mamba.**
+**Give us minutes, we give back a faster Mamba.**
 
 
 ## 🛠 Dataset Prepare
-- For image datasets we use ImageNet-1K.
-- For video datasets K400, you can download them from [OpenDataLab](https://opendatalab.org.cn/OpenMMLab/Kinetics-400) or their official websites. We follow the data list from [here](https://drive.google.com/drive/folders/17VB-XdF3Kfr9ORmnGyXCxTMs86n0L4QL?usp=sharing) to split the dataset.
+- For the image dataset, we use ImageNet-1K.
+- For the video dataset, we use K400. You can download it from [OpenDataLab](https://opendatalab.org.cn/OpenMMLab/Kinetics-400) or its official website. We follow the data list from [here](https://drive.google.com/drive/folders/17VB-XdF3Kfr9ORmnGyXCxTMs86n0L4QL?usp=sharing) to split the dataset.
 
 ## 🛠 Installation
 
