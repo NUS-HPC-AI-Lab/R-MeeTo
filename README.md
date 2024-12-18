@@ -137,14 +137,15 @@ class="center">
 ## Citation
 If you found our work useful, please consider citing us.
 ```
-@misc{shi2024fastervisionmambarebuilt,
-      title={Faster Vision Mamba is Rebuilt in Minutes via Merged Token Re-training}, 
-      author={Mingjia Shi and Yuhao Zhou and Ruiji Yu and Zekai Li and Zhiyuan Liang and Xuanlei Zhao and Xiaojiang Peng and Tanmay Rajpurohit and Shanmukha Ramakrishna Vedantam and Wangbo Zhao and Kai Wang and Yang You},
+@misc{shi2024faster,
+      title={Faster Vision Mamba is Rebuilt in Minutes Via Merged Token Re-training},
+      author={Shi, Mingjia and Zhou, Yuhao and Yu, Ruiji and Li, Zekai and Liang, Zhiyuan and Zhao, Xuanlei and
+       Peng, Xiaojiang and Rajpurohit, Tanmay and Vedantam, Ramakrishna and
+       Zhao, Wangbo and Wang, Kai and You, Yang},
       year={2024},
       eprint={2412.12496},
       archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.12496}, 
+      url={https://arxiv.org/abs/2412.12496},
 }
 ```
 
